@@ -383,3 +383,11 @@
   'createQueryTable':
     'prefix': 'createQueryTable'
     'body': '\$this->getConnection()->createQueryTable(${1:\'tableName\'}, ${2:\'query\'});'
+
+  'createMock':
+    'prefix': 'createMock'
+    'body': '\$this->createMock(${\'SomeClase\'}::class);'
+
+  'mockWillReturn':
+    'prefix': 'mockWillReturn'
+    'body': '\$stub->method(${\'MethodName\'})->willReturn(${\'foo\'});'
